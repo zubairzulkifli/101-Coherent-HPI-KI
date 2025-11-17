@@ -325,11 +325,4 @@ Deine Expertise, dein kritisches Denken und deine Verantwortung bleiben der Kern
 
 **@ HPI - 2025 | KI-Praxisworkshop Tutorials**
 
-**Remember our I CARE values:**
-* **Integrity**: Nutze KI verantwortungsvoll und transparent
-* **Collaboration**: Teile Best Practices mit Kollegen
-* **Accountability**: Übernimm Verantwortung für KI-generierte Inhalte
-* **Respect**: Achte auf Datenschutz und geistiges Eigentum
-* **Enthusiasm**: Entdecke neue Möglichkeiten mit Begeisterung
 
-© Coherent Corp. 2025. Alle Rechte vorbehalten. **Innovations That Resonate**
