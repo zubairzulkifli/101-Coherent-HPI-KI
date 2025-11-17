@@ -954,23 +954,19 @@ Semiconductor: "Präzision, Durchsatz, Advanced Packaging."
 
 ---
 
-# 🔍 Nützliche Ressourcen
+## ✅ Zusammenfassung: Die goldenen Regeln für Coherent
 
-**Interne Coherent-Ressourcen (ergänzen):**
-* Token-Zähler des genutzten KI-Anbieters
-* Coherent Brand Guidelines und Corporate Identity
-* I CARE Values Framework
-* Produktdatenblätter und technische Spezifikationen
-* Coherent Corporate Communications Styleguide
-* Compliance-Richtlinien für verschiedene Märkte
-
-**Externe technische Standards:**
-* IEEE Standards (802.3 für Ethernet, etc.)
-* ITU-T Recommendations (Telekommunikation)
-* JEDEC Standards (Halbleiter)
-* IEC Standards (Photonik und Optoelektronik)
-* ISO/IEC 27001 (Informationssicherheit)
+- **Strukturierte Prompts** nutzen – keine "Quick & Dirty"-Anfragen, vor allem bei technischen Specs
+- **Quellen einfordern** – jede Zahl, jedes Fakt belegen lassen 
+- **Temperature bewusst wählen** – faktenbasiert niedrig (0.1-0.3), kreativ höher (0.6-0.8)
+- **Bias aktiv reduzieren** – Perspektivenwechsel und Gegenprüfung (Devil's Advocate)
+- **Technologie-Neutralität** – keine automatische Bevorzugung bestimmter Plattformen ohne Begründung
+- **Menschliche Validierung** – bei kritischen/kundenbezogenen Inhalten Pflicht (Human-in-the-Loop)
+- **Datenschutz wahren** – KEINE proprietären Daten, Kundenprojekte oder NDA-Informationen eingeben
+- **Compliance beachten** – Qualitätsstandards, regulatorische Anforderungen
+- **Dokumentation & Wissensaustausch** – erfolgreiche Prompts teilen, aus Fehlern lernen
 
 ---
+
 
 **@ HPI - 2025 | KI-Praxisworkshop Tutorials**
