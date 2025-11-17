@@ -733,21 +733,7 @@ Ich möchte, dass du als Executive Assistant für das Senior Leadership Team (CE
 
 ---
 
-## Feedback und Community
 
-**Ihre Erfahrungen sind wertvoll!**
-- Teilen Sie erfolgreiche Prompts in der KI-Community (Slack/Confluence)
-- Melden Sie technische Ungenauigkeiten oder unerwartete Ergebnisse
-- Schlagen Sie Verbesserungen für dieses Tutorial vor
-
-**Bei Fragen wenden Sie sich an:**
-- **KI-Community Channel** (Slack/Teams) für Peer-Support
-- **Ihr Manager** für abteilungsspezifische Use Cases
-- **Corporate Communications** (corporate.communications@coherent.com) bei Fragen zur Brand Voice
-- **Legal Department** bei Compliance-Fragen (Patente, Vertraulichkeit)
-- **IT-Security** bei Datenschutz- und Sicherheitsthemen
-
----
 
 **@ HPI - 2025 | KI-Praxisworkshop Tutorials**
 
