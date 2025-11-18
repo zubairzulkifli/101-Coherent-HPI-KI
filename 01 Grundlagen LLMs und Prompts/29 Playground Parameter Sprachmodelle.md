@@ -1,6 +1,6 @@
 
 
-```md
+
 # 🧠 Einsteiger-Tutorial: KI-Parameter richtig nutzen  
 ## Temperatur, Top-K, Presence Penalty & Frequency Penalty verständlich erklärt  
 ### *Mit vielen, vielen Praxisbeispielen für absolute Anfänger*
@@ -281,7 +281,7 @@ Prompt:
 
 ---
 
-```
+
 
 ---
 
