@@ -60,7 +60,6 @@ Hier sind zwölf Beispiele, wie verschiedene Rollen bei Coherent KI-Bildgenerato
 
 **Anwendung:** Visualisierung für Employer-Branding-Kampagne "Join the Photonics Revolution"
 
-**Empfohlenes Tool:** **gpt-image-1** (vielseitig für Marketing)
 
 **Beispiel-Prompt:**
 ```
@@ -78,7 +77,6 @@ Für Recruiting-Kampagne, inspirierend und zugänglich.
 
 **Anwendung:** Visualisierung eines neuen Lasersystems für Produktlaunch-Kampagne
 
-**Empfohlenes Tool:** **Nano Banana** (präzise Produktdarstellung)
 
 **Beispiel-Prompt:**
 ```
@@ -96,7 +94,6 @@ Studiolicht, technisch präzise, professionell für Produktbroschüre.
 
 **Anwendung:** Visualisierung einer Laserschweißlösung für die Automobilindustrie
 
-**Empfohlenes Tool:** **Flux Kontext** (Szenenaufbau und Kontext)
 
 **Beispiel-Prompt:**
 ```
@@ -114,7 +111,6 @@ Für Kundenpräsentation, zeigt praktischen Einsatz.
 
 **Anwendung:** Visualisierung für strategische Präsentation zu Marktwachstum
 
-**Empfohlenes Tool:** **MidJourney** (kreative Konzeptvisualisierung)
 
 **Beispiel-Prompt:**
 ```
@@ -132,7 +128,6 @@ Für Board-Präsentation, visionär.
 
 **Anwendung:** Visualisierung von Kundenerfolgen für QBR-Präsentation
 
-**Empfohlenes Tool:** **gpt-image-1** (vielseitig für Präsentationen)
 
 **Beispiel-Prompt:**
 ```
@@ -150,7 +145,6 @@ Für Kundenpräsentation, zeigt erfolgreiche Zusammenarbeit.
 
 **Anwendung:** Visualisierung für Investitionspräsentation zu R&D-Budget
 
-**Empfohlenes Tool:** **gpt-image-1** (professionelle Grafiken)
 
 **Beispiel-Prompt:**
 ```
@@ -168,7 +162,6 @@ Für Budget-Präsentation, zeigt Investition in Innovation.
 
 **Anwendung:** Visualisierung für Laser-Sicherheitstraining
 
-**Empfohlenes Tool:** **Nano Banana** (präzise technische Details)
 
 **Beispiel-Prompt:**
 ```
@@ -186,7 +179,6 @@ Klare, didaktische Darstellung für Schulungsmaterial.
 
 **Anwendung:** Visualisierung für Export-Kontroll-Schulung
 
-**Empfohlenes Tool:** **gpt-image-1** (klare Dokumentationsgrafiken)
 
 **Beispiel-Prompt:**
 ```
@@ -204,7 +196,6 @@ Neutral, sachlich, professionell.
 
 **Anwendung:** Visualisierung von Laserprozessen für technische Präsentation
 
-**Empfohlenes Tool:** **Nano Banana** (technische Präzision)
 
 **Beispiel-Prompt:**
 ```
@@ -222,7 +213,6 @@ Für technische Präsentation, zeigt Prozessdetails.
 
 **Anwendung:** Visualisierung von Forschungsergebnissen zu optischen Beschichtungen
 
-**Empfohlenes Tool:** **gpt-image-1** (wissenschaftliche Darstellungen)
 
 **Beispiel-Prompt:**
 ```
@@ -240,7 +230,6 @@ Für Forschungsbericht, wissenschaftlich exakt.
 
 **Anwendung:** Visualisierung von Qualitätsprüfprozessen
 
-**Empfohlenes Tool:** **Nano Banana** (präzise Prozessdarstellung)
 
 **Beispiel-Prompt:**
 ```
@@ -258,7 +247,6 @@ Für Qualitätsdokumentation, zeigt Prüfprozess.
 
 **Anwendung:** Visualisierung von Lieferantenanforderungen für optische Rohmaterialien
 
-**Empfohlenes Tool:** **gpt-image-1** (professionelle Geschäftsgrafiken)
 
 **Beispiel-Prompt:**
 ```
