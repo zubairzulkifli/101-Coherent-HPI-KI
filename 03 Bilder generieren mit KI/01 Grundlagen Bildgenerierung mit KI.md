@@ -272,9 +272,185 @@ Für Lieferantenpräsentation, zeigt Qualitätsanforderungen.
 
 ---
 
+## Detaillierte Praxisbeispiele für Personalwesen, Marketing, Vertrieb und Verwaltung
+
+Die folgenden 10 Beispiele zeigen konkrete Anwendungsfälle mit fertigen Prompts, die Sie direkt in den KI-Bildgeneratoren verwenden können.
+
+---
+
+### 👔 Personalwesen (HR)
+
+#### Beispiel 1: Employer Branding für LinkedIn
+
+**Anwendungsfall:** Social-Media-Kampagne "Life at Coherent"
+
+**Prompt:**
+```
+Ein diverses Team von Ingenieuren und Wissenschaftlern steht lächelnd 
+in einem modernen Photonik-Labor bei Coherent. Im Hintergrund sind 
+Lasersysteme und optische Aufbauten zu sehen. Natürliches Licht durch 
+große Fenster, professionell aber zugänglich. Teamgeist und Innovation 
+spürbar. Für LinkedIn-Karriereseite, authentisch und einladend.
+```
+
+**Verwendung:** LinkedIn-Posts, Karriereseite, Recruiting-Kampagnen
+
+---
+
+#### Beispiel 2: Onboarding-Materialien
+
+**Anwendungsfall:** Willkommensbroschüre für neue Mitarbeitende
+
+**Prompt:**
+```
+Eine freundliche HR-Mitarbeiterin begrüßt einen neuen Ingenieur am 
+ersten Arbeitstag im Coherent-Empfangsbereich. Modernes Bürodesign, 
+Coherent-Logo dezent im Hintergrund. Professionell, einladend, warm. 
+Für Onboarding-Broschüre, zeigt Willkommenskultur.
+```
+
+**Verwendung:** Onboarding-Dokumentation, Welcome-Package, Intranet
+
+---
+
+### 📢 Marketing
+
+#### Beispiel 3: Produktlaunch Social Media
+
+**Anwendungsfall:** Instagram/LinkedIn-Post für neues Lasersystem
+
+**Prompt:**
+```
+Ein elegantes, futuristisches Faserlaser-System in dramatischer 
+Beleuchtung. Blaue und grüne Lichtakzente (Coherent-Farben). 
+Technologisch, innovativ, inspirierend. Minimalistischer Hintergrund. 
+Für Social-Media-Post, eye-catching und modern.
+```
+
+**Verwendung:** Instagram, LinkedIn, Twitter/X, Produktankündigungen
+
+---
+
+#### Beispiel 4: Messegrafik für Standbanner
+
+**Anwendungsfall:** Banner für Photonics West Messe
+
+**Prompt:**
+```
+Eine beeindruckende Collage von Coherent-Lasersystemen in verschiedenen 
+Industrieanwendungen: Halbleiterfertigung, Automobilproduktion, 
+medizinische Geräte. Hochauflösend, professionell, technisch präzise. 
+Coherent-Blau und -Grün als Akzentfarben. Für Messebanner, 3x2 Meter.
+```
+
+**Verwendung:** Messestände, Rollups, Großformatdruck
+
+---
+
+#### Beispiel 5: Blog-Header für Website
+
+**Anwendungsfall:** Header-Bild für Blogartikel "Zukunft der Mikrobearbeitung"
+
+**Prompt:**
+```
+Eine künstlerische Darstellung von Laserstrahlen, die präzise Muster 
+in verschiedene Materialien gravieren. Makro-Perspektive, Details der 
+Materialbearbeitung sichtbar. Wissenschaftlich-ästhetisch, inspirierend. 
+Für Blog-Header, zeigt Präzision und Innovation.
+```
+
+**Verwendung:** Blog, Website, Newsletter-Header
+
+---
+
+### 💼 Vertrieb
+
+#### Beispiel 6: Kundenreferenz-Story
+
+**Anwendungsfall:** Case Study Visualisierung für Automobilkunden
+
+**Prompt:**
+```
+Ein Coherent-Vertriebsingenieur und ein Produktionsleiter eines 
+Automobilzulieferers stehen vor einer Produktionslinie mit Coherent-
+Lasersystem. Beide betrachten ein Tablet mit Performance-Daten. 
+Partnerschaftliche Atmosphäre, professionell, erfolgreich. 
+Für Case Study, zeigt Kundenbeziehung.
+```
+
+**Verwendung:** Case Studies, Referenzkunden-Präsentationen, Website
+
+---
+
+#### Beispiel 7: Lösungsarchitektur-Diagramm
+
+**Anwendungsfall:** Visualisierung einer Komplettlösung für Kundenpräsentation
+
+**Prompt:**
+```
+Ein professionelles Flussdiagramm einer Coherent-Laserlösung für die 
+Halbleiterfertigung. Zeigt Lasersystem, Steuerung, Qualitätskontrolle 
+und Datenintegration. Klare Icons, Pfeile, Beschriftungen. 
+Technisch präzise aber verständlich. Für Kundenpräsentation.
+```
+
+**Verwendung:** Vertriebspräsentationen, Angebote, technische Beratung
+
+---
+
+#### Beispiel 8: ROI-Visualisierung
+
+**Anwendungsfall:** Darstellung von Kosteneinsparungen durch Lasertechnologie
+
+**Prompt:**
+```
+Eine professionelle Infografik, die Kosteneinsparungen durch Coherent-
+Lasertechnologie zeigt. Balkendiagramme vergleichen traditionelle vs. 
+Laser-Fertigung. Grüne Pfeile nach oben für Effizienzgewinne. 
+Sauber, businessorientiert, überzeugend. Für ROI-Präsentation.
+```
+
+**Verwendung:** Vertriebspräsentationen, Business Cases, Angebote
+
+---
+
+### 🏢 Verwaltung
+
+#### Beispiel 9: Interne Kommunikation
+
+**Anwendungsfall:** Newsletter-Grafik für Unternehmenserfolge
+
+**Prompt:**
+```
+Eine inspirierende Darstellung von Teamwork bei Coherent. Verschiedene 
+Abteilungen (Engineering, Sales, Support) arbeiten zusammen, visualisiert 
+durch verbundene Icons oder Personen. Coherent-Farben, professionell, 
+motivierend. Für internen Newsletter, zeigt Zusammenarbeit.
+```
+
+**Verwendung:** Intranet, Newsletter, interne Präsentationen
+
+---
+
+#### Beispiel 10: Nachhaltigkeitsbericht
+
+**Anwendungsfall:** Visualisierung für CSR-Bericht
+
+**Prompt:**
+```
+Eine symbolische Darstellung von nachhaltiger Photonik-Technologie. 
+Grüne Energie trifft auf Lasertechnologie. Pflanzen, Solarpanels und 
+Lasersysteme harmonisch kombiniert. Hoffnungsvoll, zukunftsorientiert, 
+verantwortungsbewusst. Für Nachhaltigkeitsbericht, inspirierend.
+```
+
+**Verwendung:** CSR-Berichte, Nachhaltigkeitskommunikation, Stakeholder-Präsentationen
+
+---
+
 ## Beispiel-Prompts für die Coherent-Praxis
 
-Nachfolgend finden Sie fünf praxisnahe Beispiele aus verschiedenen Bereichen, die Sie in jedem der Tools testen können, um die Unterschiede direkt zu sehen.
+Nachfolgend finden Sie fünf weitere praxisnahe Beispiele aus verschiedenen Bereichen, die Sie in jedem der Tools testen können, um die Unterschiede direkt zu sehen.
 
 ### 🔬 Beispiel 1: Forschungslabor-Szene
 
@@ -436,4 +612,3 @@ KI-Bildgeneratoren erstellen Entwürfe, aber du triffst die finalen Entscheidung
 ---
 
 **@ 2025 - HPI KI Workshops | Tutorials**
-
