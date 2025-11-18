@@ -401,27 +401,7 @@ Ich möchte mit einem Customer Success Manager bei Coherent sprechen, der strate
 - **Testdokumentation:** Reproduzierbare Testszenarien, Umgebungsbedingungen protokollieren
 - **Publikationen:** Peer-Review-Standards einhalten, keine voreiligen Performance-Claims
 
----
 
-## 🎓 Weiterführende Ressourcen
-
-**Interne Coherent-Ressourcen:**
-- KI-Nutzungs-Leitfaden für Mitarbeiter (Intranet/SharePoint)
-- Datenschutz- und IT-Security-Richtlinien
-- Prompt-Template-Bibliothek (SharePoint)
-- Coherent Labs: Konsultation bei technischen Fragen
-
-**Externe Quellen (empfohlen für Photonik/Datacom):**
-- **Marktforschung**: LightCounting, Dell'Oro Group, Yole Intelligence
-- **Standards-Organisationen**: IEEE 802.3 (Ethernet), MSA Consortium, OIF
-- **Fachmedien**: Laser Focus World, Photonics Spectra, Optics.org, LightReading
-- **Technische Publikationen**: IEEE Photonics Journal, OSA/Optica Journals
-- **KI-Best-Practices**: Anthropic/OpenAI Dokumentation zu Prompt Engineering
-
-**Schulungen & Austausch:**
-- Coherent-interne Tech Talks zu KI-Tools und Anwendungsfällen
-- Abteilungs-übergreifende Best-Practice-Runden (z.B. Sales ↔ Engineering)
-- Externe Konferenzen mit KI-Fokus (z.B. Photonics West AI Sessions)
 
 ---
 
