@@ -1,6 +1,4 @@
-Gerne! Hier ist das **sehr ausführliche Tutorial als vollständige Markdown-Datei** – du kannst es direkt kopieren, als `.md` speichern oder in ein internes Handbuch einbauen.
 
----
 
 ```md
 # 🧠 Einsteiger-Tutorial: KI-Parameter richtig nutzen  
