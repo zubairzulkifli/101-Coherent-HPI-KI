@@ -301,12 +301,19 @@ Verwendung: Nachhaltigkeitsberichte, Unternehmenspräsentationen
 ## 🏁 Zusammenfassung: Die wichtigsten Punkte
 
 ✅ **Verwenden Sie immer die Coherent-Farbpalette**: #0047AB, #00A651, #002855
+
 ✅ **Halten Sie Icons einfach und klar**: Mittelgrad-Details, 2px Linienbreite
+
 ✅ **Testen Sie in verschiedenen Größen**: Von 32×32px bis 1024×1024px
+
 ✅ **Achten Sie auf Barrierefreiheit**: Kontrast, Graustufen-Tauglichkeit
+
 ✅ **Dokumentieren Sie Ihre Prompts**: Für spätere Anpassungen und Konsistenz
+
 ✅ **Prüfen Sie Lizenzrechte**: Besonders bei kommerzieller Nutzung
+
 ✅ **Beachten Sie Datenschutz**: Keine vertraulichen Daten in Prompts
+
 ✅ **Holen Sie Freigaben ein**: Von Marketing/Corporate Design bei externem Einsatz
 
 ---
