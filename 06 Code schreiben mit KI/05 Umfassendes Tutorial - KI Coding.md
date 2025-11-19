@@ -24,12 +24,14 @@
 ### 1.1 Die richtige Erwartungshaltung
 
 **KI ist kein magischer Code-Generator, sondern:**
+
 - 🤝 Ein intelligenter Pair-Programming-Partner
 - 🔍 Ein Beschleuniger für Routineaufgaben
 - 💡 Ein Brainstorming-Tool für Lösungsansätze
 - 📚 Eine On-Demand-Dokumentation
 
 **KI ist NICHT:**
+
 - ❌ Ein Ersatz für Verständnis und Expertise
 - ❌ Unfehlbar oder allwissend
 - ❌ Bewusst über Ihren spezifischen Kontext
@@ -105,6 +107,7 @@ For every solution, please provide:
 ```
 
 **Warum das funktioniert:**
+
 - 🎯 Präzise Constraints reduzieren Halluzinationen
 - 🔧 Tech Stack verhindert veraltete Lösungen
 - 📋 Standards sichern Code-Qualität
@@ -126,7 +129,6 @@ For every solution, please provide:
 [Vollständiger Code hier einfügen]
 
 ### Project Structure
-```
 project/
 ├── app/
 │   ├── models/
@@ -137,7 +139,6 @@ project/
 │       └── auth_routes.py
 └── tests/
     └── test_user_service.py
-```
 
 ### Recent Changes
 - Added JWT authentication (last session)
@@ -151,11 +152,13 @@ project/
 #### Während der Session:
 
 **Alle 5-10 Messages:**
+
 - ✅ Aktualisierte Code-Versionen erneut posten
 - ✅ Zusammenfassung bisheriger Änderungen geben
 - ✅ Explizit auf vorherige Lösungen referenzieren
 
 **Beispiel:**
+
 ```
 Based on the UserService class we created earlier [paste updated code],
 I now need to add password reset functionality.
@@ -164,6 +167,7 @@ I now need to add password reset functionality.
 ### 2.3 Kontext-Template für verschiedene Szenarien
 
 #### Neues Feature implementieren:
+
 ```markdown
 ## Feature Request
 **Feature:** [Name]
@@ -183,6 +187,7 @@ I now need to add password reset functionality.
 ```
 
 #### Bug Fixing:
+
 ```markdown
 ## Bug Report
 **Expected Behavior:** [What should happen]
@@ -194,19 +199,13 @@ I now need to add password reset functionality.
 
 ## Context
 **Error Message:** 
-```
 [Vollständige Fehlermeldung]
-```
 
 **Stack Trace:**
-```
 [Vollständiger Stack Trace]
-```
 
 **Relevant Code:**
-```python
 [Code der den Fehler verursacht]
-```
 
 **What I've Tried:**
 - [Versuch 1] - Result: [...]
@@ -216,15 +215,14 @@ I now need to add password reset functionality.
 ```
 
 #### Code Review/Refactoring:
+
 ```markdown
 ## Code Review Request
 **Goal:** [Improve performance/readability/security/etc.]
 **Concerns:** [Specific worries]
 
 **Current Implementation:**
-```python
 [Code to review]
-```
 
 **Context:**
 - This code runs [frequency/scenario]
@@ -246,6 +244,7 @@ I now need to add password reset functionality.
 ### 3.1 Spezifität ist der Schlüssel ⭐⭐⭐⭐⭐
 
 #### ❌ Vage Anfragen (ineffektiv):
+
 ```
 "Create a login system"
 "Fix this bug"
@@ -256,6 +255,7 @@ I now need to add password reset functionality.
 #### ✅ Spezifische Anfragen (hocheffektiv):
 
 **Beispiel 1: Feature-Anfrage**
+
 ```markdown
 Create a user login endpoint with these specifications:
 
@@ -264,12 +264,10 @@ Create a user login endpoint with these specifications:
 - Content-Type: application/json
 
 **Request Body:**
-```json
 {
   "email": "user@example.com",
   "password": "SecurePass123!"
 }
-```
 
 **Validation:**
 - Email: Valid format, max 255 chars
@@ -283,7 +281,6 @@ Create a user login endpoint with these specifications:
 5. Implement rate limiting (5 attempts per 15 min)
 
 **Success Response (200):**
-```json
 {
   "token": "eyJhbGc...",
   "user": {
@@ -293,7 +290,6 @@ Create a user login endpoint with these specifications:
   },
   "expires_at": "2024-11-20T10:30:00Z"
 }
-```
 
 **Error Responses:**
 - 400: Invalid request format
@@ -319,24 +315,23 @@ Create a user login endpoint with these specifications:
 ```
 
 **Beispiel 2: Bug Fix**
+
 ```markdown
 Fix authentication bug in UserService.authenticate() method
 
 **Current Code:**
-```python
 def authenticate(self, email: str, password: str) -> Optional[User]:
     user = db.query(User).filter(User.email == email).first()
     if user and bcrypt.checkpw(password, user.password_hash):
         return user
     return None
-```
 
 **Issue:**
-Getting `AttributeError: 'NoneType' object has no attribute 'password_hash'`
+Getting AttributeError: 'NoneType' object has no attribute 'password_hash'
 
 **Error Context:**
 - Occurs when email doesn't exist in database
-- Error happens at line: `bcrypt.checkpw(password, user.password_hash)`
+- Error happens at line: bcrypt.checkpw(password, user.password_hash)
 - Expected: Should return None gracefully
 - Actual: Crashes with AttributeError
 
@@ -351,8 +346,8 @@ Getting `AttributeError: 'NoneType' object has no attribute 'password_hash'`
 ✓ bcrypt is installed and working for valid users
 
 **My Analysis:**
-The issue is that when `user` is None (email not found), 
-we still try to access `user.password_hash`. The `if user` 
+The issue is that when user is None (email not found), 
+we still try to access user.password_hash. The if user 
 check doesn't prevent the second part of the AND condition 
 from being evaluated.
 
@@ -402,32 +397,29 @@ Please provide step-by-step implementation with code.
 ### 3.3 Multi-Modal Kontext nutzen
 
 #### Text + Screenshot:
+
 ```markdown
 I'm getting this error when trying to log in:
 [Screenshot des Errors]
 
 Here's the code that's being called:
-```python
 [Relevanter Code]
-```
 
 The error appears after clicking the login button.
 User input: email="test@example.com", password="test123"
 
 Stack trace:
-```
 [Stack Trace]
-```
 
 Database state: User exists in database, confirmed via direct query.
 ```
 
 #### Text + Diagramm:
+
 ```markdown
 Here's my current architecture:
 [Diagramm oder ASCII-Darstellung]
 
-```
 ┌──────────┐      ┌──────────────┐      ┌──────────┐
 │  Client  │─────▶│   API Layer  │─────▶│ Database │
 └──────────┘      └──────────────┘      └──────────┘
@@ -436,17 +428,16 @@ Here's my current architecture:
                   ┌─────────────┐
                   │ Auth Service│
                   └─────────────┘
-```
 
 Problem: Auth Service needs to validate tokens but doesn't 
 have access to token store. How should I restructure this?
 ```
 
 #### Text + Dateistruktur:
+
 ```markdown
 My project structure is:
 
-```
 project/
 ├── src/
 │   ├── api/
@@ -464,7 +455,6 @@ project/
 │       └── validators.py
 └── tests/
     └── ...
-```
 
 Where should I place:
 1. JWT token generation/validation logic?
@@ -499,6 +489,7 @@ Please suggest best practices for this structure.
 **Von unten nach oben bauen:**
 
 #### Schritt 1: Datenmodelle
+
 ```markdown
 Create the User model with these fields:
 - id: UUID (primary key)
@@ -517,6 +508,7 @@ Include:
 ```
 
 #### Schritt 2: Core Functions
+
 ```markdown
 Based on the User model we just created [paste model],
 now create these core utility functions:
@@ -535,6 +527,7 @@ Requirements:
 ```
 
 #### Schritt 3: Business Logic
+
 ```markdown
 Using the User model and utility functions we created,
 implement the UserService class with these methods:
@@ -552,6 +545,7 @@ Include:
 ```
 
 #### Schritt 4: Integration (API Layer)
+
 ```markdown
 Create FastAPI routes using the UserService we built:
 
@@ -568,6 +562,7 @@ Include:
 ```
 
 #### Schritt 5: Full Feature (End-to-End)
+
 ```markdown
 Now let's add the complete password reset flow:
 
@@ -586,6 +581,7 @@ Include email sending logic (mock for now) and token expiry (1 hour).
 **Für jede Code-Komponente:**
 
 #### 1️⃣ Request (Initial Implementation)
+
 ```markdown
 Implement the hash_password function:
 - Input: plain text password (string)
@@ -595,6 +591,7 @@ Implement the hash_password function:
 ```
 
 #### 2️⃣ Review (Critical Analysis)
+
 ```markdown
 Review this hash_password implementation:
 [paste code]
@@ -609,6 +606,7 @@ Check for:
 ```
 
 #### 3️⃣ Refine (Improve Based on Feedback)
+
 ```markdown
 Based on your review, you mentioned [issue].
 Please provide an improved version that addresses:
@@ -632,11 +630,9 @@ Also add:
 **Purpose:** [What it does in one sentence]
 
 **Signature:**
-```python
 def function_name(param1: Type1, param2: Type2) -> ReturnType:
     """[Brief description]"""
     pass
-```
 
 **Inputs:**
 - param1: [description, constraints, examples]
@@ -692,6 +688,7 @@ def function_name(param1: Type1, param2: Type2) -> ReturnType:
 **Vor Akzeptanz von KI-generiertem Code:**
 
 #### ✅ Funktionalität
+
 - [ ] Code kompiliert/läuft ohne Fehler
 - [ ] Erfüllt alle angegebenen Anforderungen
 - [ ] Edge Cases sind abgedeckt
@@ -699,6 +696,7 @@ def function_name(param1: Type1, param2: Type2) -> ReturnType:
 - [ ] Input-Validierung ist implementiert
 
 #### ✅ Lesbarkeit
+
 - [ ] Klare, beschreibende Namen (Variablen, Funktionen, Klassen)
 - [ ] Angemessene Code-Kommentare (warum, nicht was)
 - [ ] Konsistente Formatierung
@@ -706,6 +704,7 @@ def function_name(param1: Type1, param2: Type2) -> ReturnType:
 - [ ] Funktionen sind fokussiert (Single Responsibility)
 
 #### ✅ Wartbarkeit
+
 - [ ] Code ist modular aufgebaut
 - [ ] Abhängigkeiten sind klar
 - [ ] Keine Code-Duplikation (DRY)
@@ -713,6 +712,7 @@ def function_name(param1: Type1, param2: Type2) -> ReturnType:
 - [ ] Konfiguration ist externalisiert
 
 #### ✅ Performance
+
 - [ ] Angemessene Algorithmen-Komplexität (Big-O)
 - [ ] Keine offensichtlichen Bottlenecks
 - [ ] Effiziente Datenstrukturen verwendet
@@ -720,6 +720,7 @@ def function_name(param1: Type1, param2: Type2) -> ReturnType:
 - [ ] Caching wo sinnvoll
 
 #### ✅ Security
+
 - [ ] Input wird validiert und sanitized
 - [ ] Keine SQL-Injection-Möglichkeiten
 - [ ] Keine XSS-Schwachstellen
@@ -728,6 +729,7 @@ def function_name(param1: Type1, param2: Type2) -> ReturnType:
 - [ ] Keine Secrets im Code
 
 #### ✅ Testing
+
 - [ ] Unit Tests sind vorhanden
 - [ ] Test Coverage ist ausreichend
 - [ ] Tests sind aussagekräftig
@@ -737,12 +739,11 @@ def function_name(param1: Type1, param2: Type2) -> ReturnType:
 ### 5.2 Code Review Prompts
 
 #### Basic Review:
+
 ```markdown
 Please review this code for quality and best practices:
 
-```python
 [Your code here]
-```
 
 Analyze:
 1. **Code Quality:** Style, naming, structure
@@ -760,12 +761,11 @@ For each issue found:
 ```
 
 #### Security-Focused Review:
+
 ```markdown
 Perform a security audit on this code:
 
-```python
 [Your code here]
-```
 
 Check for OWASP Top 10:
 1. Injection flaws (SQL, NoSQL, Command, LDAP)
@@ -787,12 +787,11 @@ For each vulnerability:
 ```
 
 #### Performance Review:
+
 ```markdown
 Analyze this code for performance optimization:
 
-```python
 [Your code here]
-```
 
 Context:
 - Runs [frequency, e.g., "1000 times per second"]
@@ -819,9 +818,7 @@ For each suggestion:
 Help me refactor this code to improve [maintainability/performance/readability]:
 
 **Current Code:**
-```python
 [Paste code that needs refactoring]
-```
 
 **Issues:**
 - [Issue 1: e.g., "Too many nested loops"]
@@ -902,26 +899,19 @@ Please provide:
 [Brief description of the issue]
 
 **Expected Behavior:**
-```
 [What should happen - be specific]
-```
 
 **Actual Behavior:**
-```
 [What actually happens - include error messages]
-```
 
 **Error Details:**
-```python
 # Full error message
 [Paste complete error]
 
 # Stack trace
 [Paste complete stack trace]
-```
 
 **Relevant Code:**
-```python
 # Function where error occurs
 [Paste function code]
 
@@ -930,7 +920,6 @@ Please provide:
 
 # Related components
 [Paste any related code that might be involved]
-```
 
 **Environment:**
 - OS: [e.g., Ubuntu 22.04]
@@ -939,13 +928,11 @@ Please provide:
 - Dependencies: [relevant libraries and versions]
 
 **Data Context:**
-```python
 # Input that causes the error
 input_data = [paste actual input]
 
 # Database state (if relevant)
 # Sample data in relevant tables
-```
 
 **What I've Tried:**
 1. [Attempt 1] → Result: [what happened]
@@ -971,12 +958,11 @@ input_data = [paste actual input]
 ### 6.3 Test Generation Prompts
 
 #### Unit Tests:
+
 ```markdown
 Generate comprehensive unit tests for this function:
 
-```python
 [Paste your function]
-```
 
 **Test Framework:** [pytest/unittest/Jest/JUnit]
 
@@ -1000,7 +986,6 @@ Generate comprehensive unit tests for this function:
 - Include test docstrings
 
 **Example test structure:**
-```python
 def test_feature_name_with_valid_input():
     """Test that function handles valid input correctly."""
     # Arrange
@@ -1013,9 +998,9 @@ def test_feature_name_with_valid_input():
     # Assert
     assert result == expected, "Should return expected value for valid input"
 ```
-```
 
 #### Integration Tests:
+
 ```markdown
 Create integration tests for this API endpoint:
 
@@ -1062,19 +1047,13 @@ Create integration tests for this API endpoint:
 Analyze this error and provide debugging guidance:
 
 **Error:**
-```
 [Paste complete error message]
-```
 
 **Stack Trace:**
-```
 [Paste complete stack trace]
-```
 
 **Code Context:**
-```python
 [Paste relevant code sections]
-```
 
 **Please provide:**
 
@@ -1112,9 +1091,7 @@ Analyze this error and provide debugging guidance:
 ```markdown
 Perform a comprehensive security audit on this code:
 
-```python
 [Paste your code]
-```
 
 **Context:**
 - Application Type: [Web API / CLI / Service]
@@ -1193,9 +1170,7 @@ Perform a comprehensive security audit on this code:
 ```markdown
 Optimize this code for performance:
 
-```python
 [Paste code to optimize]
-```
 
 **Current Performance:**
 - Execution time: [e.g., 2.5 seconds]
@@ -1246,12 +1221,11 @@ Optimize this code for performance:
 ### 7.3 Security-Specific Prompts
 
 #### Input Validation:
+
 ```markdown
 Review this input validation for security:
 
-```python
 [Paste validation code]
-```
 
 **Check for:**
 - Whitelist vs. blacklist approach
@@ -1271,12 +1245,11 @@ Review this input validation for security:
 ```
 
 #### Authentication Review:
+
 ```markdown
 Review this authentication implementation:
 
-```python
 [Paste auth code]
-```
 
 **Verify:**
 - Password hashing (algorithm, salt, work factor)
@@ -1304,9 +1277,7 @@ Review this authentication implementation:
 ```markdown
 Generate comprehensive documentation for this code:
 
-```python
 [Paste your code]
-```
 
 **Documentation Required:**
 
@@ -1353,9 +1324,7 @@ Create a comprehensive README.md for this project:
 **Description:** [Brief description]
 
 **Project Structure:**
-```
 [Paste project tree]
-```
 
 **Key Features:**
 - [Feature 1]
@@ -1432,9 +1401,7 @@ Use proper Markdown formatting with:
 ```markdown
 Generate API documentation for these endpoints:
 
-```python
 [Paste API route code]
-```
 
 **For each endpoint include:**
 
@@ -1483,9 +1450,7 @@ Generate a CHANGELOG.md entry based on these changes:
 **Release Date:** [e.g., 2024-11-19]
 
 **Changes Made:**
-```
 [Paste git diff or list of changes]
-```
 
 **Follow [Keep a Changelog](https://keepachangelog.com/) format:**
 
@@ -1530,7 +1495,8 @@ Generate a CHANGELOG.md entry based on these changes:
 
 #### ❌ NIEMALS tun:
 
-1. **Blindes Copy-Paste**
+**1. Blindes Copy-Paste**
+
 ```markdown
 ❌ DON'T:
 Copy GPT code directly into production without understanding
@@ -1543,7 +1509,8 @@ Copy GPT code directly into production without understanding
 5. Review with team if critical
 ```
 
-2. **Vage Anfragen**
+**2. Vage Anfragen**
+
 ```markdown
 ❌ DON'T: "Fix this bug"
 ❌ DON'T: "Make it faster"
@@ -1552,7 +1519,8 @@ Copy GPT code directly into production without understanding
 ✅ DO: Use specific, detailed requests (see Section 3)
 ```
 
-3. **Fehlende Kontext-Updates**
+**3. Fehlende Kontext-Updates**
+
 ```markdown
 ❌ DON'T:
 Message 1: "Create User class"
@@ -1563,7 +1531,8 @@ Message 10: "Here's the current User class [paste code].
 Update the login method to..."
 ```
 
-4. **Ignorieren von Security-Warnungen**
+**4. Ignorieren von Security-Warnungen**
+
 ```markdown
 ❌ DON'T:
 Ignore GPT's security warnings
@@ -1576,7 +1545,8 @@ Implement all suggested security measures
 Review code for vulnerabilities
 ```
 
-5. **Über-Optimierung**
+**5. Über-Optimierung**
+
 ```markdown
 ❌ DON'T:
 Ask for micro-optimizations before code works
@@ -1589,7 +1559,8 @@ Make it right second
 Make it fast last (and only if needed)
 ```
 
-6. **Fehlende Tests**
+**6. Fehlende Tests**
+
 ```markdown
 ❌ DON'T:
 Skip tests because "GPT wrote the code"
@@ -1607,6 +1578,7 @@ Verify behavior matches requirements
 **GPT kann halluzinieren bei:**
 
 #### 1. Library-Funktionen
+
 ```python
 # GPT könnte vorschlagen:
 df.remove_duplicates()  # ❌ Existiert nicht in pandas
@@ -1616,6 +1588,7 @@ df.drop_duplicates()    # ✅ Korrekt
 ```
 
 **Lösung:**
+
 ```markdown
 When suggesting pandas code, please verify function names 
 against the official pandas documentation. If you're unsure, 
@@ -1623,6 +1596,7 @@ say so explicitly.
 ```
 
 #### 2. API-Signaturen
+
 ```python
 # GPT könnte sagen:
 requests.get(url, timeout=30, verify_ssl=True)  # ❌ Falscher Parameter
@@ -1632,12 +1606,14 @@ requests.get(url, timeout=30, verify=True)      # ✅ Korrekt
 ```
 
 **Lösung:**
+
 ```markdown
 Double-check this code against the official [library] documentation.
 Are these the correct parameter names and types?
 ```
 
 #### 3. Version-spezifische Features
+
 ```python
 # GPT könnte sagen (für Python 3.8):
 data: dict[str, int] = {}  # ❌ Erfordert Python 3.9+
@@ -1648,6 +1624,7 @@ data: Dict[str, int] = {}  # ✅ Korrekt
 ```
 
 **Lösung:**
+
 ```markdown
 We're using Python 3.8. Please ensure all syntax and features 
 are compatible with this version. If you suggest newer features, 
@@ -1764,12 +1741,11 @@ def add_item(item, items=[]):  # ❌ Shared state!
 ```
 
 **Prompt für Red-Flag-Check:**
+
 ```markdown
 Review this code for common anti-patterns and red flags:
 
-```python
 [Paste code]
-```
 
 Specifically check for:
 1. SQL injection vulnerabilities
@@ -1823,31 +1799,23 @@ Flag any suspicious patterns and provide secure alternatives.
 
 ### 2.1 Create Data Models
 Prompt:
-```
 Create [models] with these specifications:
 [Detailed specs]
-```
 
 ### 2.2 Implement Business Logic
 Prompt:
-```
 Implement [service/controller] with these methods:
 [Detailed specs]
-```
 
 ### 2.3 Create API Layer
 Prompt:
-```
 Create API endpoints:
 [Endpoint specs]
-```
 
 ### 2.4 Add Error Handling
 Prompt:
-```
 Review and add comprehensive error handling:
 [Current code]
-```
 
 ---
 
@@ -1855,25 +1823,19 @@ Review and add comprehensive error handling:
 
 ### 3.1 Generate Unit Tests
 Prompt:
-```
 Create unit tests for:
 [Component to test]
 Coverage requirements: [specs]
-```
 
 ### 3.2 Generate Integration Tests
 Prompt:
-```
 Create integration tests for:
 [Feature workflow]
-```
 
 ### 3.3 Security Testing
 Prompt:
-```
 Perform security audit on:
 [Code to audit]
-```
 
 ---
 
@@ -1881,24 +1843,18 @@ Perform security audit on:
 
 ### 4.1 Code Documentation
 Prompt:
-```
 Add comprehensive documentation to:
 [Code]
-```
 
 ### 4.2 API Documentation
 Prompt:
-```
 Generate API docs for:
 [Endpoints]
-```
 
 ### 4.3 User Documentation
 Prompt:
-```
 Create user guide for:
 [Feature]
-```
 
 ---
 
@@ -1906,24 +1862,18 @@ Create user guide for:
 
 ### 5.1 Code Review
 Prompt:
-```
 Review this code for quality:
 [Complete feature code]
-```
 
 ### 5.2 Performance Review
 Prompt:
-```
 Analyze performance of:
 [Critical paths]
-```
 
 ### 5.3 Security Review
 Prompt:
-```
 Final security audit:
 [All feature code]
-```
 
 ---
 
@@ -1975,7 +1925,6 @@ Final security audit:
 
 ## Step 2: Gather Context
 Prompt:
-```
 Help me debug this issue:
 
 Error: [error message]
@@ -1984,13 +1933,11 @@ Relevant Code: [code]
 Context: [additional info]
 
 Please analyze the root cause.
-```
 
 ---
 
 ## Step 3: Implement Fix
 Prompt:
-```
 Based on your analysis, provide a fix for:
 [Issue]
 
@@ -1999,7 +1946,6 @@ Requirements:
 - No breaking changes
 - Include tests
 - Explain the fix
-```
 
 ---
 
@@ -2043,7 +1989,6 @@ Requirements:
 
 ## Step 2: Plan Refactoring
 Prompt:
-```
 Analyze this code and create refactoring plan:
 [Code]
 
@@ -2055,7 +2000,6 @@ Please provide:
 1. Step-by-step refactoring plan
 2. Risk assessment
 3. Testing strategy
-```
 
 ---
 
@@ -2071,12 +2015,10 @@ Please provide:
 For each refactoring step:
 
 Prompt:
-```
 Refactor [specific aspect]:
 Current code: [paste]
 Goal: [specific goal]
 Please provide refactored version with explanation.
-```
 
 After each step:
 - [ ] Tests still pass
@@ -2142,9 +2084,8 @@ Provide:
 
 ```
 Review this code:
-```[language]
+
 [code]
-```
 
 Analyze:
 1. Quality & best practices
@@ -2192,9 +2133,8 @@ Please provide:
 
 ```
 Generate tests for:
-```[language]
+
 [code]
-```
 
 Coverage:
 1. Happy path (2-3 tests)
@@ -2232,12 +2172,14 @@ Include:
 ## 📚 Zusätzliche Ressourcen
 
 ### Empfohlene Lektüre:
+
 - OWASP Top 10
 - Clean Code (Robert C. Martin)
 - Design Patterns (Gang of Four)
 - Effective [Your Language] (sprachspezifisch)
 
 ### Tools zur Code-Qualität:
+
 - SonarQube / SonarLint
 - Black / Prettier (Formatierung)
 - Pylint / ESLint (Linting)
@@ -2245,18 +2187,11 @@ Include:
 - pytest-cov / Istanbul (Coverage)
 
 ### Online-Ressourcen:
+
 - Official Documentation (immer die erste Anlaufstelle)
 - Stack Overflow (für spezifische Probleme)
 - GitHub (für Code-Beispiele)
 - OWASP (für Security)
-
----
-
-**Version:** 1.0  
-**Letzte Aktualisierung:** November 2024  
-**Lizenz:** Creative Commons BY-SA 4.0  
-
-**Feedback & Verbesserungen:** Diese Anleitung ist ein lebendes Dokument. Teile deine Erfahrungen und Verbesserungsvorschläge!
 
 ---
 
